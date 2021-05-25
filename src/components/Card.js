@@ -33,7 +33,7 @@ const Card = ({ img }) => {
         alert(ex.message);
         setLoading(false);
       });
-  });
+  }, []);
   React.useEffect(() => {
     getData();
   }, [getData]);
