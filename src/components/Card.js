@@ -45,6 +45,7 @@ const Card = ({ img }) => {
             type="text"
             className="form-control"
             id="inputPassword2"
+            required
             value={id}
             onChange={(e) => setId(e.target.value)}
             placeholder="Rechercher..."
