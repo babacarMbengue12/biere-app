@@ -32,7 +32,7 @@ const Register = ({ history }) => {
       .catch((ex) => {
         console.log("error", ex);
       });
-  }, [data]);
+  }, [data, validate, history]);
   return (
     <div>
       <div className="row align-items-center justify-content-center mt-5">

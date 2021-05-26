@@ -61,7 +61,7 @@ export const useFormData = (formData) => {
     } else {
       throw new Error(fieldName + " is not a valid key");
     }
-  });
+  }, []);
   return [data, onDataChange];
 };
 
@@ -84,6 +84,6 @@ export const useFormValidation = (initalErrors, cbRules) => {
           reject(newErrors);
         });
     });
-  });
+  }, []);
   return [errors, validate, setErrors];
 };

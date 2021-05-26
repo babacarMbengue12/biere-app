@@ -28,7 +28,7 @@ const Login = ({ history }) => {
       .catch((ex) => {
         console.log("error", ex);
       });
-  }, [data]);
+  }, [data, history, setErrors, validate]);
   return (
     <div>
       <div className="row align-items-center justify-content-center mt-5">
