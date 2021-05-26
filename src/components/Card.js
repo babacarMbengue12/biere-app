@@ -7,6 +7,7 @@ const Card = ({ img }) => {
   const [loading, setLoading] = React.useState(true);
   const [item, setItem] = React.useState(null);
   const getDataFromId = React.useCallback(() => {
+    if (!id) return;
     setLoading(true);
     axios
       .get("https://api.punkapi.com/v2/beers/" + id)
